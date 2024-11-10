@@ -10,6 +10,4 @@
 
 **Frontend** - vue.js
 
-**analytics** - ноутбуки jupiter с кластеризацией и генерацией выводов по компетенциям чемпионата, python3
-
-**api** - python3, fastapi,redis, rabbitMQ, SQLalchemy
+**[tgbot_wise]** - Telegram-бот для поиска информации (первоначальная тестовая версия)<br>
