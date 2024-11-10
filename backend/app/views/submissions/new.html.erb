@@ -1,0 +1,13 @@
+<div class="w-full">
+  <!-- Заголовок и подзаголовок -->
+  <div class="text-center py-6">
+    <h1 class="text-4xl font-bold text-gray-800">Самбишн</h1>
+  </div>
+
+
+  <form action="<%=submissions_path %>" method="post" enctype="multipart/form-data" class="flex items-center p-4 bg-white rounded-lg">
+    <label for="file_upload" class="block text-sm font-medium text-gray-700">Выбери файл:</label>
+    <input type="file" id="file_upload" name="file_upload" class="ml-4 flex-1 block w-full rounded-md border-gray-300  focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+    <input type="submit" value="Загрузить" class="ml-4 px-4 py-2 border border-transparent rounded-md text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+  </form>
+</div>

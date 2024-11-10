@@ -1,0 +1,34 @@
+<div class="w-full">
+  <!-- Заголовок и подзаголовок -->
+  <div class="text-center py-6">
+    <h1 class="text-4xl font-bold text-gray-800">Загрузка новых данных</h1>
+    <p class="text-xl text-gray-600 mt-2">Загрузите новые данные в формате pdf</p>
+  </div>
+
+  <form action="<%=slides_path %>" method="post" enctype="multipart/form-data" class="flex items-center p-4 bg-white rounded-lg">
+    <label for="file_upload" class="block text-sm font-medium text-gray-700">Выбери файл:</label>
+    <input type="file" id="file_upload" name="file_upload" class="ml-4 flex-1 block w-full rounded-md border-gray-300  focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+    <input type="submit" value="Загрузить" class="ml-4 px-4 py-2 border border-transparent rounded-md text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+  </form>
+
+  <% flash.each do |key, message| %>
+    <% case key.to_sym
+       when :notice
+         bg_color = 'bg-green-100'
+         border_color = 'border-green-400'
+         text_color = 'text-green-700'
+       when :alert
+         bg_color = 'bg-red-100'
+         border_color = 'border-red-400'
+         text_color = 'text-red-700'
+       else
+         bg_color = 'bg-blue-100'
+         border_color = 'border-blue-400'
+         text_color = 'text-blue-700'
+       end %>
+    <div class="<%= "#{bg_color} #{border_color} #{text_color}" %> px-4 py-3 rounded relative mb-4" role="alert">
+      <span class="block sm:inline"><%= message %></span>
+    </div>
+  <% end %>
+
+</div>

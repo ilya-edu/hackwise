@@ -1,0 +1,8 @@
+<%= link_to 'New submission', new_submission_path %>
+<ul>
+  <% @submissions.each do |submission| %>
+    <li>
+      <%= link_to submission.created_at, submission_url(submission)   %>
+    </li>
+  <% end %>
+</ul>

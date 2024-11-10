@@ -1,0 +1,46 @@
+<!-- app/views/articles/show.html.erb -->
+<div class="w-full">
+  <!-- Заголовок статьи -->
+  <div class="text-center py-6">
+    <h1 class="text-4xl font-bold text-gray-800"><%= @article.name %></h1>
+    <p class="text-xl text-gray-600 mt-2"><%= @article.content %></p>
+  </div>
+
+  <% if @article.chunks.any? %>
+    <!-- Если слайды загружены -->
+    <h2 class="text-2xl font-bold text-gray-800 mt-8">Загруженные слайды:</h2>
+    <a href="https://media-wise.kovalev.team/">
+      <button>
+        Вернутся в чат и задать вопрос по документу
+      </button>
+    </a>
+    <div class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <% @article.chunks.order(:slide_number).each do |chunk| %>
+        <div class="border rounded-lg p-4">
+          <h3 class="text-xl font-bold text-gray-700">Слайд №<%= chunk.slide_number %></h3>
+          <p class="text-gray-600 mt-2"><%= chunk.content %></p>
+          <% if chunk.slide.attached? %>
+            <div class="mt-4">
+              <%= image_tag chunk.slide, alt: "Слайд #{chunk.slide_number}", class: "w-full h-auto" %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  <% else %>
+    <!-- Если слайды еще не загружены -->
+    <div class="text-center py-6">
+      <p class="text-xl text-gray-600">Пока нет загруженных слайдов. Пожалуйста, подождите, пока PDF файл обрабатывается 10 слайдов занимает примерно 15 минут. Обновите страницу что проверить состояние загрузки</p>
+    </div>
+  <% end %>
+</div>
+<style>
+  button{
+    background-color: #3b82f6;
+
+  }
+  button:hover{
+    background-color: #2563eb;
+
+  }
+</style>
