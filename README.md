@@ -8,6 +8,6 @@
 
 **Backend** -  Ruby
 
-**Frontend** - vue.js
+**[Frontend](https://github.com/ilya-edu/hackwise/tree/main/frontend)** - Vue.js, TypeScript, JS
 
 **[tgbot_wise](https://github.com/ilya-edu/hackwise/tree/main/tgbot_wise)** - Telegram-бот для поиска информации (первоначальная тестовая версия)<br>
