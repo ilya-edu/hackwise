@@ -10,4 +10,4 @@
 
 **Frontend** - vue.js
 
-**[tgbot_wise]** - Telegram-бот для поиска информации (первоначальная тестовая версия)<br>
+**[tgbot_wise](https://github.com/ilya-edu/hackwise/tree/main/tgbot_wise)** - Telegram-бот для поиска информации (первоначальная тестовая версия)<br>
