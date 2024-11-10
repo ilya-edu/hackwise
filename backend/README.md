@@ -17,6 +17,7 @@ docker-compose down && docker-compose up --build
 
 На странице https://media-wise-api.kovalev.team/admin/message можно видеть список всех сообщенией 
 в системе и если зайти в какое нибудь сообщение можно увидеть контекст который был отправлен в LLM и референсы на слайды из которых взят контекст
+
 ### Основные пути
 - [Чатбот](https://media-wise.kovalev.team) можно зайти под гостем или под админом `manager:zak2`
 - [Админка](https://media-wise-api.kovalev.team/admin)
