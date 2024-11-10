@@ -1,0 +1,37 @@
+.background {
+  background-color: rgb(242, 243, 245);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+:-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  background-color: rgba(0, 119, 255, 0.5);
+  border-radius: 20px;
+}
+
+a {
+  color: rgb(0, 0, 255) !important;
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+.text-dark {
+  color: rgb(34, 34, 34) !important;
+}
+.bg-dark {
+  background: rgb(34, 34, 34) !important;
+}
+
+code {
+  border-radius: 8px;
+  width: 833px;
+  max-width: calc(100vw - 175px);
+}
