@@ -6,7 +6,9 @@
 
 Описания проектов находятся в корне папок, в проектах, в файлах Readme.md.
 
-**Backend** -  Ruby
+**[Backend] (https://github.com/ilya-edu/hackwise/tree/main/backend)** -  Ruby
+
+**[Backend/LLM] (https://github.com/ilya-edu/hackwise/tree/main/backend/LLM)** -  Python
 
 **[Frontend](https://github.com/ilya-edu/hackwise/tree/main/frontend)** - Vue.js, TypeScript, JS
 
